@@ -1,0 +1,146 @@
+/* Стили для основного контейнера выпадающего списка */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  /* Стили для кнопки, которая отображается в закрытом состоянии */
+  .dropbtn {
+    background-color: var(--second-background-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Стили для контейнера с опциями (скрытыми по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Стили для опций в выпадающем списке */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Стили для опций при наведении */
+  .dropdown-content a:hover {
+    background-color: var(--main-color);
+    color: var(--second-background-color);
+  }
+  
+  /* Показываем опции при наведении на контейнер с кнопкой */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .home__serch-bar {
+    display: flex;
+    position: relative;
+    top: 126px;
+    width: 73%;
+    gap: 30px;
+    justify-content: center;
+    z-index: 10;
+  }
+
+.home__wrapp {
+    display: flex;
+}
+.dropbtn:hover {
+    background-color:var(--second-background-color);
+}
+.dropbtn__pic {
+    margin-left: 5px;
+}
+.home__serch-bar-bg {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(100% - 0px);
+
+    transition: all 0.6s ease-in-out;
+}
+.collapsed-serch-bar-bg {
+  width: 140px;
+  margin-left: calc(100% - 140px);
+  /* Изменяем margin-left в соответствии с отступом справа */
+
+}
+.home__serch-btn {
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.main__photo {
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+
+/* ///////////////////////// */
+.home__serch-bar {
+  display: flex;
+  position: fixed;
+  width: 73%;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Остальные стили остаются без изменений */
+
+/* Добавленные стили для свернутого состояния */
+.collapsed .dropdown-content {
+  display: none;
+}
+
+.collapsed .dropbtn {
+  background-color: var(--second-background-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.collapsed .home__serch-bar-bg {
+  padding: 20px;
+  width: 50px; /* Ширина свернутого состояния */
+}
+
+.collapsed .dropbtn__pic {
+  margin-left: 5px;
+}
+
+.collapsed .home__serch-btn {
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.searchBtn{
+  padding: 10px;
+
+}
+.openButton{
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+

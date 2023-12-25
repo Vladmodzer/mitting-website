@@ -1,0 +1,16 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    
+}
+.login__box {
+    display: flex;
+    flex-direction: column;
+}
+.login__input,.login__button {
+    padding: 10px;
+}
